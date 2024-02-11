@@ -7,13 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <div class="min-w-[320px]">
     <div class="bg-white">
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav class="mx-auto max-w-7xl flex items-center justify-between p-6 lg:p-8" aria-label="Global">
+      <header class="absolute inset-x-0 top-0 z-50 min-w-[320px]">
+        <nav class="mx-auto max-w-7xl flex items-center justify-between p-6 md:p-8 md:px-12 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">RMRF Consulting</span>
               <img class="h-6 w-auto" src="/assets/img/logo.svg" alt="RMRF Consulting Logo">
+            </a>
+          </div>
+          <div class="hidden md:flex md:gap-x-12">
+            <a href="#expertise" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-600">Our Expertise</a>
+            <a href="mailto:contact@rmrfconsulting.com" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-600">Contact Us</a>
+          </div>
+          <div class="md:hidden">
+            <a href="mailto:contact@rmrfconsulting.com" class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
             </a>
           </div>
         </nav>
@@ -31,49 +43,71 @@
           </svg>
           <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
         </svg>
-        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
-          <div class="mx-auto max-w-3xl lg:mx-0 lg:flex-auto">
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:flex lg:items-center lg:gap-x-16 lg:px-8 lg:pt-40">
+          <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div class="flex">
               <div class="relative flex items-center gap-x-3 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 <span class="relative flex h-2 w-2">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-800 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-900"></span>
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-700 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-green-800"></span>
                 </span>
                 <span class="font-semibold text-blue-900">Now Accepting Clients</span>
               </div>
             </div>
             <h1 class="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Helping businesses thrive in the digital age.</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">Partners in innovation, problem-solving, and digital transformation. Ready to take your business to the next level? Contact us today to learn more about our services and how we can help you achieve your goals.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">We are industry experts with over 20 years combined experience. Partners in innovation, problem-solving, and digital transformation. Ready to take your business to the next level? Contact us today to learn more about our services.</p>
             <div class="mt-10 flex items-center gap-x-6">
-              <a href="#" class="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900">Say Hello</a>
+              <a href="mailto:contact@rmrfconsulting.com" class="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900">Say Hello</a>
             </div>
           </div>
           <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
             <!-- hold -->
+            <ul role="list" class="mx-auto grid max-w-2xl sm:grid-cols-2 gap-x-12 gap-y-16 text-center lg:mx-0 lg:max-w-none lg:-mr-6">
+              <li>
+                <div class="relative mx-auto h-44 w-44 rounded-full">
+                  <img class="mx-auto w-full h-full rounded-full shadow-lg" src="/assets/img/mason.jpeg" alt="John Mason, Engineer">
+                  <div class="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">John Mason</h3>
+                <p class="text-sm leading-6 text-gray-600 italic">Partner</p>
+              </li>
+              <li class="lg:pt-12">
+                <div class="relative mx-auto h-44 w-44 rounded-full">
+                  <img class="mx-auto w-full h-full rounded-full shadow-lg" src="/assets/img/robinson.jpeg" alt="Tammy Robinson, Engineer">
+                  <div class="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Tammy Robinson</h3>
+                <p class="text-sm leading-6 text-gray-600 italic">Partner</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
-        <p class="mt-6 text-xl leading-8 text-gray-600">Industry experts with over 20 years combined experience.</p>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 lg:mt-12">
+      <div id="expertise" class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Expertise</h2>
       </div>
-      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center lg:mx-0 lg:max-w-none">
-        <li>
-          <img class="mx-auto h-24 w-24 rounded-full md:h-36 md:w-36 lg:h-48 lg:w-48" src="/assets/img/mason.jpeg" alt="John Mason, Engineer">
-          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">John Mason</h3>
-          <p class="text-sm leading-6 text-gray-600">Partner </p>
-        </li>
-        <li>
-          <img class="mx-auto h-24 w-24 rounded-full md:h-36 md:w-36 lg:h-48 lg:w-48" src="/assets/img/robinson.jpeg" alt="Tammy Robinson, Engineer">
-          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Tammy Robinson</h3>
-          <p class="text-sm leading-6 text-gray-600">Partner</p>
-        </li>
-      </ul>
+      <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div>
+          <dt class="font-semibold text-blue-900">Software Development</dt>
+          <dd class="mt-1 text-gray-600">Have us develop customized software solutions tailored to meet specific business needs, leveraging technologies such as web development, mobile applications, and enterprise software.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-blue-900">Info Security</dt>
+          <dd class="mt-1 text-gray-600">We can help to identify and assess security vulnerabilities to help you protect your business from cyber threats and breaches.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-blue-900">Cloud Solutions</dt>
+          <dd class="mt-1 text-gray-600">Migrate your business to a cloud platform, optimize cloud infrastructure, or get help building cloud-native applications to enhance scalability, flexibility, and cost-efficiency.</dd>
+        </div>
+        <div>
+          <dt class="font-semibold text-blue-900">IT Consulting & Support</dt>
+          <dd class="mt-1 text-gray-600">Get guidance and assistance in managing your IT infrastructure, systems, and operations. Whether it's technical advisement, resolving technical issues, or providing ongoing support &dash; we can help you.</dd>
+        </div>
+      </dl>
     </div>
-      
+    
     <footer class="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
       <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
         <p class="mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0">
@@ -84,5 +118,6 @@
         </p>
       </div>
     </footer>
+  </div>
 </body>
 </html>
